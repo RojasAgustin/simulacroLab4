@@ -1,0 +1,40 @@
+<div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-light rounded-3" style="border-radius: 5%;border: 5px black groove;">
+      <div class="container-fluid py-5">
+        <h1 class="display-5">Listado de Elementos</h1>
+        <app-tabla-pelicula [listaRecibida]="listaPeliculas" (selectPelicula)="mostrarPelicula($event)">
+
+        </app-tabla-pelicula>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+    <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Para borrar</h2>
+        </div>
+        </div>
+      <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Solo Mostrar</h2>
+            <app-detalle-pelicula [peliculaDetallada]="unaPelicula">
+
+            </app-detalle-pelicula>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Para modificar</h2>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2021
+    </footer>
+  </div>

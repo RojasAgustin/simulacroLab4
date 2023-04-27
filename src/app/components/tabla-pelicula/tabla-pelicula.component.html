@@ -1,0 +1,24 @@
+<table class="table-hover table-bordered table-striped" border=1>
+	<thead>
+		<th>ID</th>
+		<th>Nombre</th>
+		<th>Tipo</th>
+		<!-- <th>Fecha</th>
+    <th>Publico</th> -->
+    <th>Imagen</th>
+    <th>Detalles</th>
+	</thead>
+  <tbody>
+  	
+<tr *ngFor="let pelicula of listaRecibida">
+    <td class="text-center align-middle" id="id-field">{{pelicula.id}}</td>
+    <td > {{pelicula.nombre}} </td>
+    <td > {{pelicula.tipo}} </td>
+    <td> <img src="../../../assets/{{pelicula.imagen}}" alt="" width="50px" height="50px"></td>
+    <!-- <td > {{pelicula.fecha}} </td>
+    <td > {{pelicula.publico}} </td> -->
+    <td > <button type="button" class="btn btn-info" (click)="seleccionarPelicula(pelicula)">Seleccionar<i class="fa fa-check"></i>
+    </button></td>
+ </tr>
+  </tbody> 
+</table>

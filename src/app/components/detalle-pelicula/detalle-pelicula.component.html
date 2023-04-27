@@ -1,0 +1,14 @@
+<div class="card" *ngIf="peliculaDetallada != null">
+    <div class="card-body">
+      <img class="card-img-top" src="../../../assets/{{peliculaDetallada.imagen}}" alt="{{peliculaDetallada.nombre}}">
+      <h3 class="card-title">{{peliculaDetallada.nombre}}</h3>
+      <p class="card-text">ID: {{peliculaDetallada.id}}</p>
+      <p class="card-text">Tipo: {{peliculaDetallada.tipo}}</p>
+      <p class="card-text">Fecha: {{peliculaDetallada.fecha}}</p>
+      <p class="card-text">Publico: {{peliculaDetallada.publico}}</p>
+    </div>
+  </div>
+  
+<!-- <ul>
+
+</ul> -->
